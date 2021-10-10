@@ -199,7 +199,7 @@ body {
     margin: 1.5rem 2.5rem;
 }
 
-.time-frame-menu .option-btn {
+.time-frame-menu label {
     border: none;
     background: transparent;
     cursor: pointer;
@@ -207,11 +207,15 @@ body {
     color: var(--neutral-dsblue);
 }
 
-.time-frame-menu .option-btn:hover {
+.time-frame-menu label:hover {
     color: var(--text-primary);
 }
 
-.time-frame-menu .option-btn.selected {
+.time-frame-menu input {
+    display: none;
+}
+
+.time-frame-menu input:checked + label  {
     color: var(--text-primary);
 }
 
@@ -251,6 +255,7 @@ body {
         margin-top: 1.7rem;
         font-size: 5rem;
         font-weight: 300;
+        flex-basis: 100%;
     }
 
 

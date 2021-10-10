@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -26,21 +26,18 @@
 
             </div>
         </div>
-        <menu class="time-frame-menu">
-            <li>
-                <button class="option-btn">Daily</button>
-            </li>
-            <li>
-                <button class="option-btn selected">Weekly</button>
-            </li>
-            <li>
-                <button class="option-btn">Monthly</button>
-            </li>
-        </menu>
+        <form class="time-frame-menu">
+            <input type="radio" id="daily" name="time-frame-selection" value="daily">
+            <label for="daily">Daily</label>
+            <input type="radio" id="weekly" name="time-frame-selection" value="weekly" checked>
+            <label for="weekly">Weekly</label>
+            <input type="radio" id="monthly" name="time-frame-selection" value="monthly">
+            <label for="monthly">Monthly</label>
+        </form>
     </div>
 
 
-    <div class="card card-timer card-outer work">
+    <div data-name="work" class="card card-timer card-outer work">
         <div class="card-inner">
             <h3 class="card-heading">Work</h3>
             <img src="images/icon-ellipsis.svg" alt="ellipses">
@@ -52,7 +49,7 @@
     </div>
 
 
-    <div class="card card-timer card-outer play">
+    <div data-name="play" class="card card-timer card-outer play">
         <div class="card-inner">
             <h3 class="card-heading">Play</h3>
             <img src="images/icon-ellipsis.svg" alt="ellipses">
@@ -60,7 +57,7 @@
             <p class="previous-timer">Last Week - 8hrs</p>
         </div>
     </div>
-    <div class="card card-timer card-outer study">
+    <div data-name="study" class="card card-timer card-outer study">
         <div class="card-inner">
             <h3 class="card-heading">Study</h3>
             <img src="images/icon-ellipsis.svg" alt="ellipses">
@@ -69,7 +66,7 @@
 
         </div>
     </div>
-    <div class="card card-timer card-outer exercise">
+    <div data-name="exercise" class="card card-timer card-outer exercise">
         <div class="card-inner">
             <h3 class="card-heading">Exercise</h3>
             <img src="images/icon-ellipsis.svg" alt="ellipses">
@@ -78,7 +75,7 @@
 
         </div>
     </div>
-    <div class="card card-timer card-outer social">
+    <div data-name="social" class="card card-timer card-outer social">
         <div class="card-inner">
             <h3 class="card-heading">Social</h3>
             <img src="images/icon-ellipsis.svg" alt="ellipses">
@@ -87,7 +84,7 @@
 
         </div>
     </div>
-    <div class="card card-timer card-outer self-care">
+    <div data-name="self care" class="card-timer card-outer self-care">
         <div class="card-inner">
             <h3 class="card-heading">Self Card</h3>
             <img src="images/icon-ellipsis.svg" alt="ellipses">
@@ -106,5 +103,9 @@
         Coded by <a href="#">Matthew North</a>.
     </div>
 </footer>
+
+<script type="application/json" src="data/data.json" ></script>
+<script type="module" src="js/script.mjs"></script>
+
 </body>
 </html>
