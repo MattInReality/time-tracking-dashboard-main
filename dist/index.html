@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+<main class="main">
+
+<div class="timer-container">
+
+    <div class="card card-primary card-outer ">
+        <div class="card-inner card-user">
+            <img class="avatar" src="images/image-jeremy.png" alt="Avatar image for Jeremy">
+            <div class="details">
+                <p>Report for</p>
+                <h1>Jeremy Robson</h1>
+
+            </div>
+        </div>
+        <menu class="time-frame-menu">
+            <li>
+                <button class="option-btn">Daily</button>
+            </li>
+            <li>
+                <button class="option-btn selected">Weekly</button>
+            </li>
+            <li>
+                <button class="option-btn">Monthly</button>
+            </li>
+        </menu>
+    </div>
+
+
+    <div class="card card-timer card-outer work">
+        <div class="card-inner">
+            <h3 class="card-heading">Work</h3>
+            <img src="images/icon-ellipsis.svg" alt="ellipses">
+            <p class="current-timer">32hrs</p>
+            <div class="previous-timer"><span>Last Week - 36hrs</span></div>
+
+
+        </div>
+    </div>
+
+
+    <div class="card card-timer card-outer play">
+        <div class="card-inner">
+            <h3 class="card-heading">Play</h3>
+            <img src="images/icon-ellipsis.svg" alt="ellipses">
+            <p class="current-timer">10hrs</p>
+            <p class="previous-timer">Last Week - 8hrs</p>
+        </div>
+    </div>
+    <div class="card card-timer card-outer study">
+        <div class="card-inner">
+            <h3 class="card-heading">Study</h3>
+            <img src="images/icon-ellipsis.svg" alt="ellipses">
+            <p class="current-timer">4hrs</p>
+            <p class="previous-timer">Last Week - 7hrs</p>
+
+        </div>
+    </div>
+    <div class="card card-timer card-outer exercise">
+        <div class="card-inner">
+            <h3 class="card-heading">Exercise</h3>
+            <img src="images/icon-ellipsis.svg" alt="ellipses">
+            <p class="current-timer">4hrs</p>
+            <p class="previous-timer">Last Week - 5hrs</p>
+
+        </div>
+    </div>
+    <div class="card card-timer card-outer social">
+        <div class="card-inner">
+            <h3 class="card-heading">Social</h3>
+            <img src="images/icon-ellipsis.svg" alt="ellipses">
+            <p class="current-timer">5hrs</p>
+            <p class="previous-timer">Last Week - 10hrs</p>
+
+        </div>
+    </div>
+    <div class="card card-timer card-outer self-care">
+        <div class="card-inner">
+            <h3 class="card-heading">Self Card</h3>
+            <img src="images/icon-ellipsis.svg" alt="ellipses">
+            <p class="current-timer">2hrs</p>
+            <p class="previous-timer">Last Week - 2hrs</p>
+
+        </div>
+    </div>
+</div>
+</main>
+
+<footer class="footer">
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Matthew North</a>.
+    </div>
+</footer>
+</body>
+</html>
