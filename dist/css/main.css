@@ -121,7 +121,6 @@ body {
 }
 
 .card-timer.card-outer {
-    /*background-size: 7rem;*/
     padding-top: 4rem;
     background-repeat: no-repeat;
     background-position: 92% -15%;
@@ -173,7 +172,6 @@ body {
 }
 
 .card-timer .current-timer {
-    /*font-size: clamp(3.2rem, calc(1rem + 2vw) , 5rem);*/
     font-size: 3.2rem;
     font-weight: 300;
 }
@@ -250,7 +248,6 @@ body {
     }
 
     .card-timer .current-timer {
-        /*font-size: clamp(3.2rem, calc(1rem + 2vw) , 5rem);*/
         margin-top: 1.7rem;
         font-size: 5rem;
         font-weight: 300;
