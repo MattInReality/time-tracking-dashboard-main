@@ -11,23 +11,13 @@ async function getData() {
 
 }
 
-// Closure for the data from from getData() if the data is static (YAGNI).
-const data = (() => {
-    let d
-    return async function() {
-        if (!d) {
-          d = await getData()
-        }
-        return d
-    }
-})()
-
 function setTimerData(timerEl, data, timeFrame) {
     const currentTimer = timerEl.querySelector('.current-timer')
     const previousTimer = timerEl.querySelector('.previous-timer')
     const dataItem = data.filter(d => d.title.toLowerCase() === timerEl.dataset.name)[0]
     const current = dataItem.timeframes[timeFrame.toString()].current
     const previous = dataItem.timeframes[timeFrame.toString()].previous
+    // Could have used a nested str
     const previousPrefix = {
         daily: 'Yesterday',
         weekly: 'Last Week',
@@ -37,13 +27,12 @@ function setTimerData(timerEl, data, timeFrame) {
     currentTimer.innerText = current + 'hrs'
     previousTimer.innerText = `${previousPrefix[timeFrame]} ${previous} hrs`
 
-
 }
 
 async function setTimerCards(timeFrame) {
     try {
     const tf = timeFrame || radio.querySelector('input[checked]').value
-    const d = await data()
+    const d = await getData()
     timers.forEach((e)=> {
         setTimerData(e, d, tf)
     })

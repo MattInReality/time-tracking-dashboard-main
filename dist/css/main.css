@@ -62,27 +62,23 @@ body {
     min-height: 16rem;
 }
 
-
-
 .card-inner {
     border-radius: inherit;
     height: 100%;
     padding: 2.5rem;
     display: flex;
+    align-items: center;
 }
 
-/*set flex and flex wrap*/
 .card-inner:not(.card-user) {
     background-color: var(--neutral-dblue);
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .card-inner:not(.card-user):hover {
     background-color: var(--neutral-dsblue);
     cursor: pointer;
 }
-
 
 .card-primary {
     min-height: 22rem;
@@ -91,10 +87,8 @@ body {
 }
 
 .card-user {
-    padding: 2.5rem;
     background-color: var(--primary-blue);
     justify-content: space-around;
-    align-items: center;
     min-height: 70%;
     margin: 0;
 }
@@ -123,7 +117,7 @@ body {
 .card-timer.card-outer {
     padding-top: 4rem;
     background-repeat: no-repeat;
-    background-position: 92% -15%;
+    background-position: 92% -7%;
     background-blend-mode: normal;
 }
 
@@ -186,8 +180,6 @@ body {
     max-width: 2rem;
     object-fit: contain;
 }
-
-
 
 .time-frame-menu {
     display: flex;
