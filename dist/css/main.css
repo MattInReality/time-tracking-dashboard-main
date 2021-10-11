@@ -181,6 +181,10 @@ body {
     object-fit: contain;
 }
 
+.card-timer .card-inner img:hover {
+    filter: contrast(200%);
+}
+
 .time-frame-menu {
     display: flex;
     list-style: none;
