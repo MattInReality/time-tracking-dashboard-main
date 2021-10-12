@@ -50,7 +50,7 @@ body {
     min-width: var(--mobile);
     max-width: 120rem;
     margin: 0 auto;
-    min-height: 60rem;
+    min-height: 55rem;
     padding: 2.5rem;
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 .card-timer.card-outer {
-    padding-top: 4.5rem;
+    padding-top: 4rem;
     background-repeat: no-repeat;
     background-position: 92% -7%;
     background-blend-mode: normal;
