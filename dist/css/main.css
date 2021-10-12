@@ -220,10 +220,10 @@ body {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
-@media (min-width: 90rem) {
+@media (min-width: 80rem) {
     .timer-container {
         width: 100%;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
 
