@@ -77,9 +77,6 @@ Long term though I really want to branch out, learn some other languages and do 
 - [Kevin Powells YouTube Channel](https://www.youtube.com/kepowob) - I watch this channel from time to time. It's a 
   brilliant resource for the CSS you won't pick up in the average Udemy course.
 
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
 - Website - TBC
